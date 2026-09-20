@@ -5,13 +5,13 @@
 class Localpilot < Formula
   desc "Your command center for everything running on localhost — discover, inspect, and safely kill processes by port or PID."
   homepage "https://github.com/arpitbhalla1801/localpilot"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.0/localpilot_Darwin_x86_64.tar.gz"
-      sha256 "fbfa578f024e1f06280eae4a54b5f9f3609dd78b2babfadf1640472a5a452d4a"
+      url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.1/localpilot_Darwin_x86_64.tar.gz"
+      sha256 "d7899827be429293cc18a399fefed5b37d1aba47e2cfc1328ad159855aafe46b"
 
       def install
         bin.install "localpilot"
@@ -22,8 +22,8 @@ class Localpilot < Formula
       end
     end
     on_arm do
-      url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.0/localpilot_Darwin_arm64.tar.gz"
-      sha256 "cfedba9d4242c71efbc28cae8021c5ed5938c6e9b9bb147e52be9d0106cece4a"
+      url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.1/localpilot_Darwin_arm64.tar.gz"
+      sha256 "eaa8568f0fbbbe3d1f0dfed5b1ed7cc2c91ef64829621e03d10bf65a0499da44"
 
       def install
         bin.install "localpilot"
@@ -38,8 +38,8 @@ class Localpilot < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.0/localpilot_Linux_x86_64.tar.gz"
-        sha256 "962e0b111843f831bbac4d1751f6aa6c2200abff11f3d287ee9f793fa1b66b4d"
+        url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.1/localpilot_Linux_x86_64.tar.gz"
+        sha256 "fdcca9c302be0763a8a06b0c98585aa4afb0000630981f54312969b4b341705c"
 
         def install
           bin.install "localpilot"
@@ -52,8 +52,8 @@ class Localpilot < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.0/localpilot_Linux_arm64.tar.gz"
-        sha256 "fa15f7aeb0a46706127488e5dbea393cfb4fbfac59fefc074ed2f3c0f1896738"
+        url "https://github.com/arpitbhalla1801/localpilot/releases/download/v0.2.1/localpilot_Linux_arm64.tar.gz"
+        sha256 "e35cc376b240f3609c50562d562d5924fb9a6fb3b03e5e6dbee91e850aba0c1f"
 
         def install
           bin.install "localpilot"
